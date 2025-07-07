@@ -74,7 +74,7 @@ spec:
           args:
             - |
               apk add --no-cache openssh bash curl tar && \
-              curl -sL https://raw.githubusercontent.com/alexnup/k8s-scripts/main/pvc-ssh-loader/pvc-ssh-loader.sh -o /tmp/loader.sh && \
+              curl -sL https://raw.githubusercontent.com/alexshnup/k8s-scripts/main/pvc-ssh-loader/pvc-ssh-loader.sh -o /tmp/loader.sh && \
               chmod +x /tmp/loader.sh && \
               bash /tmp/loader.sh
           env:
@@ -282,7 +282,7 @@ initContainers:
     args:
       - |
         apk add --no-cache openssh bash curl tar && \
-        curl -sL https://raw.githubusercontent.com/alexnup/k8s-scripts/main/pvc-ssh-loader/pvc-ssh-loader.sh -o /tmp/loader.sh && \
+        curl -sL https://raw.githubusercontent.com/alexshnup/k8s-scripts/main/pvc-ssh-loader/pvc-ssh-loader.sh -o /tmp/loader.sh && \
         chmod +x /tmp/loader.sh && \
         bash /tmp/loader.sh
     env:
